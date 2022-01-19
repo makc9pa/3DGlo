@@ -1,0 +1,24 @@
+{
+  "name": "js_lesson19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makc9pa/JS_Lesson19.git"
+  },
+  "author": "Maksim Petlin \"2max2@mail.ru\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makc9pa/JS_Lesson19/issues"
+  },
+  "homepage": "https://github.com/makc9pa/JS_Lesson19#readme",
+  "devDependencies": {
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
