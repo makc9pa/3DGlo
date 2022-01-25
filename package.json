@@ -1,5 +1,5 @@
 {
-  "name": "js_lesson19",
+  "name": "3DGlo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/makc9pa/JS_Lesson19.git"
+    "url": "git+https://github.com/makc9pa/3DGlo.git"
   },
   "author": "Maksim Petlin \"2max2@mail.ru\"",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/makc9pa/JS_Lesson19/issues"
+    "url": "https://github.com/makc9pa/3DGlo.git/issues"
   },
-  "homepage": "https://github.com/makc9pa/JS_Lesson19#readme",
+  "homepage": "https://github.com/makc9pa/3DGlo.git#readme",
   "devDependencies": {
     "webpack": "^5.66.0",
     "webpack-cli": "^4.9.1"
