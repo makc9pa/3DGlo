@@ -18,7 +18,7 @@ const inputCheck = () => {
     })
 
     textInput.addEventListener('input', (e) => {
-        e.target.value = e.target.value.replace(/[^а-яА-Я-\s]/g, '')
+        e.target.value = e.target.value.replace(/[^а-яА-Я-\s\d().,!?:";'_-]/g, '')
     })
 
     emailInputs.forEach(input => {
@@ -29,7 +29,7 @@ const inputCheck = () => {
 
     phoneInputs.forEach(input => {
         input.addEventListener('input', (e) => {
-            e.target.value = e.target.value.replace(/[^\d()-]/g, '')
+            e.target.value = e.target.value.replace(/[^\d()+-]/g, '')
         })
     })
 }
