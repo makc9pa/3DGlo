@@ -33,6 +33,7 @@ const sendForm = ( { formId, someElem = []} ) => {
         const formBody = {}
 
         statusBlock.textContent = loadText
+        statusBlock.style.color = 'aqua'
         form.append(statusBlock)
 
         formData.forEach((val, key) => {
@@ -51,18 +52,22 @@ const sendForm = ( { formId, someElem = []} ) => {
         
         if (validate(formElements)) {
             sendData(formBody)
-            .then(data => {
-                statusBlock.textContent = successText
+                .then(data => {
+                    statusBlock.textContent = successText
+                    statusBlock.style.color = 'aqua'
 
-                formElements.forEach(input => {
-                    input.value = ''
+                    formElements.forEach(input => {
+                        input.value = ''
+                    })
                 })
-            })
-            .catch(error => {
-                statusBlock.textContent = errorText
-            })
+                .catch(error => {
+                    statusBlock.textContent = errorText
+                    statusBlock.style.color = 'red'
+                })
         } else {
             alert(' Введенные данные некорректные ')
+            statusBlock.textContent = errorText
+            statusBlock.style.color = 'red'
         }
     }
 
