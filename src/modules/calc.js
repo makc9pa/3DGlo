@@ -25,7 +25,7 @@ const calc = (price = 100) => {
         }
 
         if (calcType.value && calcSquare.value) {
-            totalValue = price * calcTypeValue * calcSquareValue * calcCountValue * calcDayValue
+            totalValue = Math.round(price * calcTypeValue * calcSquareValue * calcCountValue * calcDayValue)
         } else {
             totalValue = 0
         }
